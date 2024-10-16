@@ -111,6 +111,7 @@ namespace MasterProjectWebAPI.Controllers
             _loggerManager.LogInfo("Exit UserController=> DeleteUser");
             if (resultWithDataDTO.IsSuccessful)
             { return Ok(resultWithDataDTO); }
+            //
             else { return BadRequest(resultWithDataDTO); }
         }
 
